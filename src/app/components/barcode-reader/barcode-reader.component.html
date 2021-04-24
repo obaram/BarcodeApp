@@ -1,0 +1,14 @@
+<h2>Barcode reader</h2>
+<p>Please scan product:</p>
+<div class="flex-row">
+  <mat-form-field class="example-form-field">
+    <mat-label>Barcode</mat-label>
+    <input matInput type="text" [formControl]="barcodeControl">
+    <button mat-button  matSuffix mat-icon-button aria-label="Clear">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+<div class="flex-row">
+  <button mat-raised-button color="primary" [disabled]="closed" (click)="close()">Exit</button>
+</div>
