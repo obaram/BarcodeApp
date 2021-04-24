@@ -1,6 +1,7 @@
 import {Product} from "./product";
 
 export interface ProductsState {
-  item: Product;
-  scanHistory: Product[]
+  items: Product[];
+  history: Product[];
+  pending: boolean;
 }

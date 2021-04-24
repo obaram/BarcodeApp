@@ -1,0 +1,14 @@
+:host {
+  flex: 1;
+  padding: var(--basic-padding);
+
+  .item {
+    p > span {
+      font-weight: bold;
+    }
+  }
+
+  mat-spinner {
+    margin-bottom: var(--basic-margin);
+  }
+}

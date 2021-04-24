@@ -1,0 +1,9 @@
+<h2>Printer</h2>
+<div *ngIf="items?.length;">
+  <div *ngFor="let item of items" class="item">
+    <p><span>name:</span> {{item.name}}</p>
+    <p><span>price:</span> {{item.price}}</p>
+    <mat-divider></mat-divider>
+  </div>
+  <p>SUM: {{sum}}</p>
+</div>
