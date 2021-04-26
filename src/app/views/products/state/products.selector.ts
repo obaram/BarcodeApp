@@ -1,7 +1,6 @@
 import {createFeatureSelector, createSelector} from '@ngrx/store';
 import {ProductsState} from "../../../shared/interfaces/products-state";
 
-
 export const getProductsState = createFeatureSelector<ProductsState>('products');
 
 export const geProduct = createSelector(getProductsState, (state: ProductsState) => {
@@ -17,5 +16,5 @@ export const getHistory = createSelector(getProductsState, (state: ProductsState
 })
 
 export const getSum = createSelector(getProductsState, (state: ProductsState) => {
-  return state.history.reduce((acc, item) => {return acc + item.price}, 0);
+  return state.history.reduce((sum, item) => {return sum + item.price}, 0);
 })

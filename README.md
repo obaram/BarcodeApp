@@ -1,6 +1,11 @@
 # BarcodeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+To make this project work properly please remember to run `npm run api` first.
+
+## JSON Server
+
+Run `npm run api` for a dev mocked API.
 
 ## Development server
 
