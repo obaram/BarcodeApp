@@ -1,0 +1,7 @@
+@import "src/styles";
+
+:host {
+  @include flex(column);
+  flex: 1;
+  padding: var(--basic-padding);
+}

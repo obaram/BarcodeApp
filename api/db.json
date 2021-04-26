@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "barcode": "000010",
+      "name": "Dolor ut ut Lorem",
+      "price": 52.43
+    },
+    {
+      "barcode": "000020",
+      "name": "Consectetur adipiscing elit",
+      "price": 12.19
+    },
+    {
+      "barcode": "000030",
+      "name": "Vivamus hendrerit",
+      "price": 67.01
+    },
+    {
+      "barcode": "000040",
+      "name": "Proin nulla sem",
+      "price": 150.65
+    },
+    {
+      "barcode": "000050",
+      "name": "Nam a magna ut turpis",
+      "price": 1908.43
+    },
+    {
+      "barcode": "000060",
+      "name": "Etiam mauris",
+      "price": 56.86
+    },
+    {
+      "barcode": "000070",
+      "name": "Quisque sollicitudin",
+      "price": 98.02
+    },
+    {
+      "barcode": "000080",
+      "name": "Proin fermentum",
+      "price": 765.76
+    },    {
+      "barcode": "000080",
+      "name": "Aliquam vitae",
+      "price": 876.21
+    }
+  ]
+}
