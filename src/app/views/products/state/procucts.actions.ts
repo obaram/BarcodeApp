@@ -5,3 +5,4 @@ const actionContext = ['PRODUCTS'];
 
 export const loadProducts = createAction(`${actionContext} Load product`, props<{barcode: string}>());
 export const loadProductsSuccess = createAction(`${actionContext} Load products success`, props<{products: Product[]}>());
+export const loadProductsError = createAction(`${actionContext} Load products error`);

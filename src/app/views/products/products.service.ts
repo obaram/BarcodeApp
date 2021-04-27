@@ -8,7 +8,6 @@ import {environment} from "../../../environments/environment";
   providedIn: 'root'
 })
 export class ProductsService {
-  public exit: Subject<void> = new Subject<void>();
 
   public constructor(private httpClient: HttpClient) {
   }

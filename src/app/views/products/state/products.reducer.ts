@@ -15,7 +15,9 @@ const reducer = createReducer(initialState,
     items: products,
     pending: false,
     history: products.length && !state.history.some((product) => product.barcode === products[0].barcode) ? [...state.history.concat(products)] : [...state.history]
-  })));
+  })),
+  on(ProductsActions.loadProductsError, (state: ProductsState) => initialState),
+);
 
 
 export function productsReducer(state: ProductsState, action: Action): ProductsState {
