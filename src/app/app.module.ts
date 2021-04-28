@@ -7,7 +7,7 @@ import {reducers} from "./state/app.reducer";
 import {StoreDevtoolsModule} from "@ngrx/store-devtools";
 import {environment} from "../environments/environment";
 import {BarcodeReaderComponent} from "./components/barcode-reader/barcode-reader.component";
-import {MaterialModule} from "./shared/material.module";
+import {MaterialModule} from "./shared/modules/material.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {PrinterComponent} from './components/printer/printer.component';
 import {LcdScreenComponent} from './components/lcd-screen/lcd-screen.component';
