@@ -1,5 +1,5 @@
 <div class="flex-row">
-  <app-barcode-reader (onAction)="onAction($event)"></app-barcode-reader>
+  <app-barcode-reader (onAction)="onAction($event)" (exit)="handleExit()"></app-barcode-reader>
   <app-lcd-screen [items]="items$ | async" [isLoading]="isLoading$ | async" [sum]="sum$ | async"></app-lcd-screen>
   <app-printer [items]="history$ | async" [sum]="sum$ | async"></app-printer>
 </div>

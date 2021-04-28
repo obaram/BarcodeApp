@@ -1,10 +1,12 @@
 <h2>Barcode reader</h2>
-<p>Please scan product:</p>
+<p>Please scan product:
+  <small matTooltip="000010, 000020, 000030, 000040, 000050, 000060, 000070, 000080">(List of possible codes)</small>
+</p>
 <div class="flex-row">
   <mat-form-field class="example-form-field">
     <mat-label>Barcode</mat-label>
-    <input matInput type="text" [formControl]="barcodeControl">
-    <button mat-button  matSuffix mat-icon-button aria-label="Clear">
+    <input matInput type="text" id="barcode-input" [formControl]="barcodeControl">
+    <button mat-button matSuffix mat-icon-button aria-label="Clear">
       <mat-icon>close</mat-icon>
     </button>
   </mat-form-field>

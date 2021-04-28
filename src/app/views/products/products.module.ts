@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MaterialModule} from "../../shared/material.module";
+import {MaterialModule} from "../../shared/modules/material.module";
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({

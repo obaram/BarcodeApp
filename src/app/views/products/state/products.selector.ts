@@ -4,17 +4,17 @@ import {ProductsState} from "../../../shared/interfaces/products-state";
 export const getProductsState = createFeatureSelector<ProductsState>('products');
 
 export const geProduct = createSelector(getProductsState, (state: ProductsState) => {
-  return state.items;
+  return state ? state.items : null;
 });
 
 export const isLoading = createSelector(getProductsState, (state: ProductsState) => {
-  return state.pending;
+  return state ? state.pending : null;
 })
 
 export const getHistory = createSelector(getProductsState, (state: ProductsState) => {
-  return state.history;
+  return state ? state.history : null;
 })
 
 export const getSum = createSelector(getProductsState, (state: ProductsState) => {
-  return state.history.reduce((sum, item) => {return sum + item.price}, 0);
+  return state ? state.history.reduce((sum, item) => {return sum + item.price}, 0) : null;
 })

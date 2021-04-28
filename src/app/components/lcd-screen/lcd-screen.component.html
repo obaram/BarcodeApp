@@ -3,14 +3,14 @@
   <mat-spinner></mat-spinner>
   <span>Snanning...</span>
 </div>
-<div *ngIf="items.length && !sum">
+<div *ngIf="items?.length && !sum">
   <div *ngFor="let item of items" class="item">
-    <p><span>name:</span> {{item.name}}</p>
-    <p><span>price:</span> {{item.price}}</p>
+    <p><span>name:</span> {{item?.name}}</p>
+    <p><span>price:</span> {{item?.price}}</p>
   </div>
 </div>
 <div *ngIf="sum">
   <p>SUM: {{sum}}</p>
 </div>
-<p *ngIf="!isLoading && !items.length && ! sum">No products found...</p>
+<p id="empty-content" *ngIf="!isLoading && !items?.length && !sum">No products found...</p>
 
